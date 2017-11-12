@@ -1,0 +1,12 @@
+name: ITCertShinnyApp
+title: ITCertShinnyApp
+username:
+account: kitoogofred
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 234645
+bundleId: 1071468
+url: https://kitoogofred.shinyapps.io/ITCertShinnyApp/
+when: 1510508213.30168
+asMultiple: FALSE
+asStatic: FALSE

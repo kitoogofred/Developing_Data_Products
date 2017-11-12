@@ -1,0 +1,46 @@
+Course Project: Shiny Application and Reproducible Pitch
+========================================================
+author: Kitoogo Fredricvk
+date:   Friday, 10 Nov 2017
+autosize: true
+
+Overview
+========================================================
+This was built as part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
+
+- Create a Shiny application 
+
+- Create a presentation in Slidify or Rstudio Presenter to pitch for the application.
+
+The Date and Application 
+========================================================
+The Data used for the Application was data collected on Information Technology (IT)
+Service providers that have registered for certification with the National IT Authority
+
+The information was cleaned up and aggregated with a view of generating a bar graph for the 
+monthly registrations for different certification Types (Level1, Level2, Level3 and Individual Service Provider).
+
+There application has slider input used to choose the size of the bars and interactively change them, in addition the application prompts user to choose the certification level to filter out and use in the graph and the graph interactively changes as per the users choice.
+
+The Summary of the Data
+========================================================
+```{r, echo=FALSE}
+# load data 
+options(warn=-1)
+source("P:/NITA/New/Personal/Training/Data Science/John Hopkins/Course 9 - Developing Data Products/Week 4/Peer-Graded/readCleanICTO.R")
+dat0 <- readCleanData("P:/NITA/New/Personal/Training/Data Science/John Hopkins/Course 9 - Developing Data Products/Week 4/Peer-Graded/itcoDBDump.csv")
+options(warn=0)
+  
+## Subset to pick out only the used Date
+dat1 <- dat0[, c("BUSINESS.TRADING.NAME", "CERTIFICATION.TYPE", "DATE.CREATED")]
+dat1 <- dat1[!is.na(dat0$BUSINESS.TRADING.NAME) & dat0$BUSINESS.TRADING.NAME!= "NA" , ]
+
+summary(dat1) 
+  
+```
+
+Viewing the Source Code and the Application
+========================================================
+Source Code: https://github.com/kitoogofred/Developing_Data_Products
+
+The Appiication can be viewed at: https://kitoogofred.shinyapps.io/ITCertShinnyApp/

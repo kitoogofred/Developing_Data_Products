@@ -1,0 +1,12 @@
+name: Peer-Graded
+title: Peer-Graded
+username:
+account: kitoogofred
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 234659
+bundleId: 1071479
+url: https://kitoogofred.shinyapps.io/Peer-Graded/
+when: 1510508958.03419
+asMultiple: FALSE
+asStatic: FALSE
