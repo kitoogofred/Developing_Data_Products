@@ -16,7 +16,9 @@ monthly registrations for different certification Types (Level1, Level2, Level3 
 
 There application has slider input used to choose the size of the bars and interactively change them, in addition the application prompts user to choose the certification level to filter out and use in the graph and the graph interactively changes as per the users choice.
 
-**Viewing the Source Code and the Application**
+**Viewing the Presentation, Source Code and the Application**
+
+Presentation: http://rpubs.com/kitoogofred/329371
 
 Source Code: https://github.com/kitoogofred/Developing_Data_Products
 
